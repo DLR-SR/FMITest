@@ -1,5 +1,4 @@
 # FMITest
-Library of Modelica models to test connected FMUs in a Modelica tool
 
 Library FMITest is a Modelica package providing models to test connected FMUs (Functional Mockup Units), especially during event iteration and during initializaton. The connection classes are structured in packages in different categories according to the underlying basic difficulty (such as "package LinearSystems: linear systems of equations occur over the connected FMUs").
 
@@ -11,5 +10,5 @@ All examples are organized in packages. The details of an example are given in t
 
 - *WithFMUs* is the same model as WithFMUsReference but some of the component instances (marked in the icon with the text "toFMU") are replaced by imported FMUs. Since importing is tool dependent, the version here just provides a copy of WithFMUsReference at this place and the tester has to replace the marked component instances with FMUs imported with the underlying used tool.
 
-The tests are mostly provided for *FMI-for-ModelExchange*. The tests of *FMITest.SimpleConnections*
-should also work for *FMI-for-CoSimulation*.
+The tests have been designed for *FMI 2.0 for ModelExchange*. The tests of *FMITest.SimpleConnections*
+can also be used for *FMI 2.0 for CoSimulation*.
